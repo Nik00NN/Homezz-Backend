@@ -1,6 +1,0 @@
-@Homezz.API_HostAddress = http://localhost:5034
-
-GET {{Homezz.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
