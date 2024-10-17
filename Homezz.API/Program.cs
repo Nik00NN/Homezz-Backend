@@ -1,3 +1,4 @@
+using Homezz.API.Core.Configurations;
 using Homezz.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -18,6 +19,8 @@ builder.Services.AddCors(options =>
 });
 
 builder.Host.UseSerilog((context, loggerConfiguration) => loggerConfiguration.WriteTo.Console().ReadFrom.Configuration(configuration: context.Configuration));
+
+builder.Services.AddAutoMapper(typeof(MapperConfig));
 
 var app = builder.Build();
 
