@@ -4,6 +4,6 @@
     {
         public List<T> Items { get; set; } = new List<T>();
         public int CurrentPage { get; set; }
-        public PaginationInfo PaginationInfo { get; set; }
+        public required PaginationInfo PaginationInfo { get; set; }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Homezz.API.Core.Models.Post;
+using Homezz.API.Data.Entities;
 
 namespace Homezz.API.Core.Configurations
 {
@@ -6,7 +8,7 @@ namespace Homezz.API.Core.Configurations
     {
         public MapperConfig()
         {
-            //create mappings
+            CreateMap<Post, CreatePostDTO>().ReverseMap();
         }
     }
 }

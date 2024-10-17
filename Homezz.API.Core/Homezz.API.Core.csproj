@@ -17,4 +17,8 @@
     <PackageReference Include="Serilog.Sinks.Seq" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Homezz.API.Data\Homezz.API.Data.csproj" />
+  </ItemGroup>
+
 </Project>
